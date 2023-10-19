@@ -1,5 +1,3 @@
-console.log("Hola");
-
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
@@ -13,8 +11,8 @@ function domainGenerator() {
           if (m < ext.length){
             console.log(pronoun[i] + adj[j] + noun[k] + ext[m]);
           } else {
-            let noun1 = noun[k];
-            console.log(pronoun[i] + adj[j] + (noun1.slice(0, -2)) +"."+ (noun1.slice(-2)));
+            let nounHack = noun[k];
+            console.log(pronoun[i] + adj[j] + (nounHack.slice(0, -2)) +"."+ (nounHack.slice(-2)));
           }
         }
       }
